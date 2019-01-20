@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM Manupulation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col m10">
+        <form name="employee-form">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate fName">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate lName">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="age" type="number" class="validate age">
+                <label for="age">Age</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="salary" type="number" class="validate salary">
+                <label for="salary">Salary</label>
+              </div>
+            </div>
+            <div class="row">
+              <a class="waves-effect waves-teal btn-small save-button green" id="save-button">Save</a>
+              <a class="waves-effect waves-teal btn-small reset-button blue">Reset</a>
+              <a class="waves-effect waves-teal btn-small clear-record-button red">Clear Record</a>
+            </div>
+        </form>
+      </div>
+    </div>
+    <div class="row employee-info">
+      <p>Employee Information</p>
+      <table class="employee-table">
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+          </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js-tut.js"></script>
+</body>
+
+</html>
